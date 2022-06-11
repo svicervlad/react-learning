@@ -1,9 +1,8 @@
 import React, { useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
-import CodeView from './components/CodeView';
-import '@picocss/pico';
-import './App.scss';
+import { Container, Section } from 'react-bulma-components';
+import './App.sass';
 import Markdown from './components/Markdown';
+import WindowBox from './components/WindowBox';
 
 function App(): JSX.Element {
   const [indexData, setIndexData] = React.useState('');
@@ -19,11 +18,13 @@ function App(): JSX.Element {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Markdown>{indexData}</Markdown>
-      </header>
-    </div>
+    <Container>
+      <Section>
+        <WindowBox useButton>
+          <Markdown>{indexData}</Markdown>
+        </WindowBox>
+      </Section>
+    </Container>
   );
 }
 
