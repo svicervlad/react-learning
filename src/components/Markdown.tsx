@@ -48,7 +48,6 @@ function Markdown({ children }: Props): JSX.Element {
               {...props}
             >
               {String(children).replace(/\n$/, '')}
-
             </SyntaxHighlighter>
           ) : (
             <code className={className} {...props}>
@@ -59,7 +58,6 @@ function Markdown({ children }: Props): JSX.Element {
       }}
     >
       {children}
-
     </ReactMarkdown>
   );
 }
