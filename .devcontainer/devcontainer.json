@@ -34,13 +34,17 @@
 				},
 				"[typescriptreact]": {
 					"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+				},
+				"[sass]": {
+					"editor.defaultFormatter": "syler.sass-indented"
 				}
 			},
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"dbaeumer.vscode-eslint",
 				"eamodio.gitlens",
-				"syler.sass-indented"
+				"syler.sass-indented",
+				"sibiraj-s.vscode-scss-formatter"
 			]
 		}
 	},
