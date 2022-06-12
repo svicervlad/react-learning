@@ -31,7 +31,9 @@ export function WindowButtons({
       </Media.Item>
       )}
       {title && title?.length > 0 && (
-      <Media.Item align="center" textAlign="center">{title}</Media.Item>
+      <Media.Item textAlign="center" className="mr-6">
+        <strong>{title}</strong>
+      </Media.Item>
       )}
     </Media>
   );
