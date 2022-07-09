@@ -3,6 +3,7 @@
 ## To run locally in web server
 
 `docker build -t local .`
+
 `docker run -p 80:80 -e SITE_ADDRESS=:80 --platform=linux/amd64 local`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
