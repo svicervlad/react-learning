@@ -11,8 +11,8 @@ COPY . .
 
 RUN yarn build
 
-FROM caddy
+FROM --platform=linux/amd64 caddy
 
 COPY Caddyfile /etc/caddy/Caddyfile
 
-COPY --from=build /app /srv
+COPY --from=build /app/build /srv
