@@ -11,7 +11,7 @@ COPY . .
 
 RUN yarn build
 
-FROM caddy-alpine as http
+FROM caddy
 
 COPY Caddyfile /etc/caddy/Caddyfile
 
